@@ -26,6 +26,7 @@ class MemberServiceSpec extends Specification {
         memberService.save(
                 "Armando",
                 "Prieto",
+                "2340",
                 new Address(street: "920 S Soto",
                         city: "Los Angeles",
                         state: "CA",
@@ -36,7 +37,7 @@ class MemberServiceSpec extends Specification {
         addressService.count() == 1
 
         and:
-        memberService.save("Peter","Otool")
+        memberService.save("Peter","Otool","4220")
 
         then:
         memberService.findAll().size() == 2
