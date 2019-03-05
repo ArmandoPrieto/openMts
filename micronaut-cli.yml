@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: app.prieto
+---
+testFramework: spock
+sourceLanguage: groovy

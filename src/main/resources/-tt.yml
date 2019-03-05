@@ -1,0 +1,24 @@
+---
+micronaut:
+    application:
+        name: mts-gorm
+jackson:
+    module-scan: false
+---
+hibernate:
+  hbm2ddl:
+    auto: update
+  cache:
+    queries: false
+    use_second_level_cache: false
+    use_query_cache: false
+    # region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+dataSource:
+  url: jdbc:mysql://localhost:3306/mts_test
+  dbCreate: create-update
+  pooled: true
+  jmxExport: true
+  driverClassName: com.mysql.cj.jdbc.Driver
+  dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  username: root
+  password: root
