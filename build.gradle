@@ -38,6 +38,9 @@ dependencyManagement {
 }
 
 dependencies {
+    runtime group: 'mysql', name: 'mysql-connector-java', version: '8.0.13'
+    compile 'com.google.cloud.sql:mysql-socket-factory-connector-j-8:1.0.13'
+
     compile "io.micronaut.configuration:micronaut-hibernate-validator"
     compile "io.micronaut.configuration:micronaut-hibernate-gorm"
     compile "io.micronaut:micronaut-http-client"
